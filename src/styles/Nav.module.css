@@ -1,0 +1,79 @@
+/* nav component */
+.nav {
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 1;
+}
+
+.nav ul {
+  width: 50%;
+  height: 60px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul:first-child {
+  margin-left: 30px;
+}
+
+.nav ul li {
+  font-weight: 600;
+}
+
+.nav .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .brand h3 {
+  font-size: 20px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.nav .brand img {
+  width: 32px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.wrapper
+  h3 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #F08080 5%, #00FFFF 5%, #6A5ACD 30%, #BFB8DA 10%, #50dad7 20%, #736AFF 20%, #5E72EB 20%, #4ADADE 20%, #51da95 20%, #6698FF 10%, #40E0D0 5%, #4EE2EC 10%,  #1edce2 30%, #ff6461 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    -webkit-animation: textclip 6s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .nav .brand h3 {
+    display: flex;
+  }
+}
