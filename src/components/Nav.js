@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/cafe.png";
+import logo from "../assets/images/logo.png";
 import classes from "../styles/Nav.module.css";
 import Account from "./Account";
 
