@@ -21,10 +21,10 @@ export default function BasicSelect({
                     onChange={handleChange}
                 >
                     <MenuItem value={12}>Music: General</MenuItem> 
-                    <MenuItem value={13}>Music: Theater/Musical</MenuItem>
-                    <MenuItem value={10}>Music: Pop</MenuItem>
-                    <MenuItem value={11}>Music: Rock</MenuItem>
-                    <MenuItem value={9}>Music: Rap</MenuItem>
+                    <MenuItem value={13}>Music: Test1</MenuItem>
+                    <MenuItem value={10}>Music: Test2</MenuItem>
+                    <MenuItem value={11}>Music: Test3</MenuItem>
+                    <MenuItem value={9}>Music: Test4</MenuItem>
                    
                 </Select>
             </FormControl>
