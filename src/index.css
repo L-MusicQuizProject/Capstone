@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-size: 1800px 1000px;
   background-repeat: no-repeat;
+  background-color: rgb(67, 67, 113);
   background-image: url('/public/background.png');
 }
 
