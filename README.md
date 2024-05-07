@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This program was created by Adrian, Adam, Emmanuel, and Gabriel for our Capstone Project.
 
-## Getting Started
+## Our site
+
+Open http://localhost:3000 to view it in your browser.
 
 To run this project locally on your machine, follow these steps:
 
