@@ -16,7 +16,7 @@ export default function PlayQuiz() {
     const [result, setResult] = useState(0);
     const [playerName, setPlayerName] = useState('');
     const databaseRef = collection(database, 'Leader Board')
-    React.useEffect(() => {
+    React.useEffect(() => { // Fetching quiz data from state and setting initial values
         const { quizData, quizCount, quizType, quizDifficulty } = state;
         setQuesArray(quizData)
         setTotalQuiz(quizCount)
@@ -31,7 +31,7 @@ export default function PlayQuiz() {
         }
     }
 
-    const submitQuiz = () => {
+    const submitQuiz = () => { // Function to navigate to the next question
         addDoc(databaseRef, {
             playerName: playerName,
             timeStamp: moment().format('LLL'),
@@ -39,7 +39,7 @@ export default function PlayQuiz() {
             category: questionsArray[0].category,
             finalScore: result
         })
-            .then(() => {
+            .then(() => { // Navigating to results page after successfully submitting quiz
                 navigate('/results', {
                     state: {
                         finalResults: result,
@@ -49,7 +49,7 @@ export default function PlayQuiz() {
     }
     return (
         <div>
-            {questionCounter < questionsArray.length + 1 ? (
+            {questionCounter < questionsArray.length + 1 ? ( // Conditionally rendering quiz questions or submission message
                 <div>
                     <h1>Play Quiz</h1>
 
